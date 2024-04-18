@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Columna para el logo y columna para la lista */
+  align-items: center; /* Centra verticalmente los elementos del header */
+}
+
+.header__nav {
+  justify-self: end; /* Alinea la lista a la derecha */
+}
+
+.header__nav__lista {
+  display: grid;
+  grid-auto-flow: column; /* Coloca los elementos de la lista en una fila */
+  gap: 10px; /* Espacio entre los elementos de la lista */
+  list-style: none; /* Quita los estilos de lista */
+  padding: 0; /* Quita el relleno de la lista */
+}
+.texto__izquierda {
+  margin-bottom: 20px; /* Agrega margen en la parte inferior del texto */
+}
+
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px; /*especifica los canales entre las filas y las columnas de la cuadrícula*/
+  max-width: 800px;
+  margin: 20px auto;
+  margin-top: 60px; /* Agrega margen en la parte superior de la galería */
+  /* Otros estilos para la galería si es necesario */
+}
+
+
+.imagen {
+  max-width: 180px; /*define el ancho máximo que un elemento puede tener.*/
+  margin: auto;
+}
+
+.imagen img {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido horizontalmente */
+  padding-top: 50px; /* Ajusta el espacio superior del footer */
+  position: relative; /* Establece posición relativa para el footer */
+}
+
+.footer__linea {
+  width: 100%; /* Ocupa el ancho completo del footer */
+  border-top: 1px solid black; /* Crea una línea horizontal */
+  margin: 20px 0; /* Ajusta el espacio arriba y abajo de la línea */
+}
+
+.footer__contenido {
+  display: flex;
+  justify-content: space-between; /* Separa los elementos a los extremos */
+  width: 100%; /* Ocupa el ancho completo del footer */
+}
+
+.footer__texto__final {
+  margin-right: auto; /* Empuja el párrafo a la izquierda */
+}
+
+.lista__redes__footer {
+  list-style: none; /* Quita los estilos de la lista */
+  display: flex;
+  
+}
+
+.elemento__lista__redes__footer {
+  margin-left: 10px; /* Ajusta el espacio entre los elementos de la lista */
+}
